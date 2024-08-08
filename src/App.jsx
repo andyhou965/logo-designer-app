@@ -1,11 +1,15 @@
-import { Button } from "./components/ui/button";
+import Header from "./components/Header";
+import SideNav from "./components/SideNav";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello World!</h1>
-      <Button className="m-2">Click me</Button>
-    </div>
+    <>
+      <Header />
+      <div className="w-64 fixed">
+        <SideNav />
+      </div>
+      <div className="ml-64">Body</div>
+    </>
   );
 }
 
